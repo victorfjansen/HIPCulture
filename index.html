@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>XXL</title>
+</head>
+
+<body>
+  <div class="overlay first"></div>
+  <div class="overlay second"></div>
+  <div class="overlay third"></div>
+
+  <div class="wrapper">
+    <nav class="nav">
+      <div class="logo">
+        <img src="img/xxl-logo.jpg" alt="Logo XXL">
+      </div>
+      <div class="menu-links">
+        <ul>
+          <li>Home</li>
+          <li>Novidades</li>
+          <li>Musica</li>
+          <li>Videos</li>
+          <li>Comprar</li>
+        </ul>
+      </div>
+      <div class="menu-icons">
+        <div class="search">
+          <i class="fa fa-search"></i>
+        </div>
+        <div class="cart">
+          <i class="fa fa-shopping-cart"></i>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  
+  <section class="container">
+    <div class="text">
+        <p class="subtitle">
+          A autoridade em 
+        </p>
+        <h1 class="title">
+          <span>Hip-Hop <br> Culture </span>
+        </h1>
+        <p class="desc">XXL é o fenômeno cultural entorno <br>
+        da Cultura do Rap e do HipHop</p>
+        <a href="#" class="readmore">Scroll para ver mais</a>
+    </div>
+
+    <div class="img-container">
+      <img src="img/img-1.jpg" alt="Imagem 1" class="img-1">
+      <div class="column">
+        <img src="img/img-2.jpg" alt="Imagem 2" class="img-2">
+        <img src="img/img-3.jpg" alt="Imagem 3" class="img-3">
+      </div>
+    </div>
+
+  </section>
+
+  
+  
+  <script>
+
+    TweenMax.from('.logo', 1, {
+      delay: 1.2,
+      opacity: 0,
+      x: -20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.staggerFrom('.menu-links ul li', 1, {
+      delay: 1.4,
+      opacity: 0,
+      x: -20,
+      ease: Power4.easeInOut
+    }, 0.08)
+
+    TweenMax.from('.search', 1, {
+      delay: 1.6,
+      opacity: 0,
+      x: -20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from('.cart', 1, {
+      delay: 1.8,
+      opacity: 0,
+      x: -20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from('.subtitle', 1, {
+      delay: 2.8,
+      opacity: 0,
+      x: -20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from('.title', 1, {
+      delay: 2.2,
+      x: -50,
+      opacity:0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from('.desc', 1, {
+      delay: 2.8,
+      opacity: 0,
+      x: -20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from('.readmore', 1, {
+      delay: 2.8,
+      opacity: 0,
+      x: -20,
+      ease: Expo.easeInOut
+    })    
+
+    TweenMax.to('.slider', 1, {
+      delay: 3,
+      opacity: 1,
+      ease: Expo.easeInOut
+    })  
+
+    TweenMax.to('.img-1', 1, {
+      delay: 2.2,
+      width: '450px',
+      ease: Expo.easeInOut
+    }) 
+
+    TweenMax.to('.img-2', 1, {
+      delay: 2.2,
+      width: '300px',
+      ease: Expo.easeInOut
+    }) 
+
+    TweenMax.to('.img-3', 1, {
+      delay: 2.2,
+      width: '300px',
+      ease: Expo.easeInOut
+    }) 
+    
+    
+    TweenMax.to('.first', 1.5, {
+      delay: .2,
+      left: '-100%',
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.second', 1.5, {
+      delay: .4,
+      left: '-100%',
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to('.third', 1.5, {
+      delay: .6,
+      left: '-100%',
+      ease: Expo.easeInOut
+    })
+  </script>
+</body>
+
+</html>
